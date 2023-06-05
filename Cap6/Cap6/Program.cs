@@ -10,7 +10,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
 
-            #region Nullable
+            #region NULLABLE
 
             // NULLABLE
 
@@ -225,6 +225,61 @@ double avg = sum / n;
             */
 
             #endregion
+
+            #endregion
+
+            #region PARAMS
+
+            /*
+            int s1 = Calculator.Sum(2, 3);
+            int s2 = Calculator.Sum(2, 3, 4);
+
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            */
+
+            #endregion
+
+            #region MODIFICADOR REF
+
+            /*
+            int a = 10;
+
+            Calculator.Triple(ref a);
+            Console.WriteLine(a);
+            */
+
+            #endregion
+
+            #region MODIFICADOR OUT
+
+            /*
+            O modificador out é similar ao ref (faz o parâmetro ser uma referência para a variável 
+            original), mas não exige que a variável original seja iniciada.
+            */
+
+            /*
+            int a = 10;
+            int triple;
+
+            Calculator.Triple(a, out triple);
+            Console.WriteLine(triple);
+            */
+
+
+            // CONSIDERAÇÕES
+
+            /*
+            Diferença:
+            A variável passada como parâmetro ref DEVE ter sido iniciada
+            A variável passada como parâmetro out não precisa ter sido iniciada
+            
+            Conclusão: ambos são muito similares, mas ref é uma forma de fazer 
+            o compilador obrigar o usuário a iniciar a variável.
+            
+            Nota: ambos são considerados "code smells" (design ruim) e devem 
+            ser evitados
+            */
 
             #endregion
 
