@@ -10,7 +10,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
 
-#region Nullable
+            #region Nullable
 
             // NULLABLE
 
@@ -67,11 +67,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             */
 
-#endregion
-        
-#region VETORES
+            #endregion
 
-#region Exercício 1
+            #region VETORES
+
+            #region Exercício 1
 
             // ENUNCIADO
 
@@ -111,9 +111,9 @@ double avg = sum / n;
             Console.WriteLine("AVERAGE HEIGHT: " + avg.ToString("F2", CultureInfo.InvariantCulture));
             */
 
-#endregion
+            #endregion
 
-#region Exercício 2
+            #region Exercício 2
 
             // ENUNCIADO
 
@@ -149,9 +149,84 @@ double avg = sum / n;
             Console.WriteLine("AVERAGE PRICE = " + avg.ToString("F2", CultureInfo.InvariantCulture));
             */
 
-#endregion
+            #endregion
 
-#endregion
+            #region Exercício 3
+
+            // ENUNCIADO
+
+            /*
+            A dona de um pensionato possui dez quartos para alugar para estudantes, sendo esses quartos
+            identificados pelos números 0 a 9.
+            
+            Fazer um programa que nicia com todos os dez quartos vazios, e depois leia uma quantidade N
+            representando o número de estudantes que vão alugar quartos (N pode ser de 1 a 10). Em seguida,
+            registre o aluguel dos N estudantes. Para cada registro de aluguel, informar o nome e email do
+            estudante, bem como qual dos quartos ele escolheu (de 0 a 9). Suponha que seja escolhido um
+            quarto vago. Ao final, seu programa deve imprimir um relatório de todas ocupações do pensionato,
+            por ordem de quarto, conforme exemplo.
+            
+            EXEMPLO:
+
+            How many rooms will be rented? 3
+
+            Rent #1:
+            Name: Maria Green
+            Email: maria@gmail.com
+            Room: 5
+
+            Rent #2:
+            Name: Marco Antonio
+            Email: marco@gmail.com
+            Room: 1
+
+            Rent #3:
+            Name: Alex Brown
+            Email: alex@gmail.com
+            Room: 8
+
+            Busy rooms:
+            1: Marco Antonio, marco@gmail.com
+            5: Maria Green, mariagmail.com
+            8: Alex Brown, alex@gmail.com
+            */
+
+            // RESOLUÇÃO
+
+            /*
+            Estudante[] vect = new Estudante[10];
+
+            Console.Write("How many rooms will be rent? ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Aluguel #{i}:");
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Email: ");
+                string email = Console.ReadLine();                
+                Console.Write("Room: ");
+                int room = int.Parse(Console.ReadLine());
+                vect[room] = new Estudante(name, email);
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Quartos ocupados:");
+            for(int i = 0;1 < 10; i++)
+            {
+                if (vect[i] != null)
+                {
+                    Console.WriteLine(i + ": " + vect[i]);
+                }
+            }
+            */
+
+            #endregion
+
+            #endregion
 
         }
     }
