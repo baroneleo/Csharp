@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap6\\Cap6.csproj",
-      "projectName": "Cap6",
-      "projectPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap6\\Cap6.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap5\\Cap5.csproj",
+      "projectName": "Cap5",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap5\\Cap5.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap6\\obj\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
