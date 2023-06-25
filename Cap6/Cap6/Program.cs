@@ -2,6 +2,7 @@
 using System;
 using System.Globalization;
 using Cap6;
+using System.Collections.Generic;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -280,6 +281,106 @@ double avg = sum / n;
             Nota: ambos são considerados "code smells" (design ruim) e devem 
             ser evitados
             */
+
+            #endregion
+
+            #region FOREACH
+
+            /*
+            string[] vect = new string[] { "Maria", "Bob", "Alex" };
+
+            for (int i = 0; i < vect.Length; i++)
+            {
+                Console.WriteLine(vect[i]);
+            }
+
+            Console.WriteLine("-----------------------");
+
+            string[] vect2 = new string[] { "Maria", "Bob", "Alex" };
+
+            foreach (string nome in vect)
+            {
+                Console.WriteLine(nome);
+            }
+            */
+
+            #endregion
+
+            #region LISTAS
+
+            List<string> list = new List<string>();
+
+            // ADD -> Adicionar na lista
+            // INSERT -> Adicionar na lista em posição pré determinada
+
+            list.Add("Maria");
+            list.Add("Alex");
+            list.Add("Bob");
+            list.Add("Anna");
+            list.Insert(2, "Marco");
+
+            foreach (string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
+            Console.WriteLine("List count: "+ list.Count);
+
+            // FIND -> Encontrar o primeiro item da lista que vc determina na busca
+
+            string s1 = list.Find(x => x[0] == 'A');
+            Console.WriteLine("First A: " + s1);
+ 
+            // FINDLAST -> Encontrar o primeiro item da lista que vc determina na busca
+
+            string s2 = list.FindLast(x => x[0] ==  'A');
+            Console.WriteLine("First A: " + s1);
+
+            // FINDINDEX -> Encontra a posição do primeiro item da lista que você determina na busca
+
+            int pos1 = list.FindIndex(x => x[0] == 'A');
+            Console.WriteLine("First position 'A': " + pos1);
+
+            // FINDINDEX -> Encontra a posição do ultimo item da lista que você determina na busca
+
+            int pos2 = list.FindLastIndex(x => x[0] == 'A');
+            Console.WriteLine("First position 'A': " + pos2);
+
+            // FINDALL -> Criar uma nova lista contendo apenas os elementos que satisfaçam um predicado
+
+            List<string> list2 = list.FindAll(x => x.Length == 5);
+            Console.WriteLine("-----------------------------");
+            foreach(string obj in list2)
+            {
+                Console.WriteLine(obj);
+            }
+
+            // REMOVEAT -> Remove o elemento pela posição dele
+            // REMOVE -> Remove o elemento que você determinar
+
+            list.Remove("Alex");
+            Console.WriteLine("-----------------------");
+            foreach (string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
+            list.RemoveRange(2, 2);
+            Console.WriteLine("-----------------------");
+            foreach (string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
+            // REMOVEALL -> Remove todos itens que satisfaçam o predicado
+
+            list.RemoveAll(x => x[0] == 'M');
+            Console.WriteLine("-----------------------------------");
+            foreach (string obj in list)
+            {
+                Console.WriteLine(obj);
+            }
+
 
             #endregion
 

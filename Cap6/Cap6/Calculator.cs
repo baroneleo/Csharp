@@ -33,9 +33,11 @@ namespace Cap6
 
         // OUT
 
+        /*
         public static void Triple(int origin, out int result)
         {
             result = origin * 3;
         }
+        */
     }
 }
