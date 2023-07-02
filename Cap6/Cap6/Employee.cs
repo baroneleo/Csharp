@@ -8,7 +8,8 @@ using System.Globalization;
 namespace Cap6
 {
     class Employee {
-
+        
+        /*
         public int Id { get; set; }
         public string Name { get; set; }
         public double Salary { get; private set; }
@@ -29,5 +30,6 @@ namespace Cap6
                 + ", "
                 + Salary.ToString("F2", CultureInfo.InvariantCulture);
         }
+        */
     }
 }
