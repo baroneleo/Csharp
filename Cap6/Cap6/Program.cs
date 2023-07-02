@@ -308,6 +308,8 @@ double avg = sum / n;
 
             #region LISTAS
 
+            /*
+
             List<string> list = new List<string>();
 
             // ADD -> Adicionar na lista
@@ -380,7 +382,60 @@ double avg = sum / n;
             {
                 Console.WriteLine(obj);
             }
+            */
 
+            #endregion
+
+            #region EXERCÍCIO LISTAS
+
+            /*
+            Console.Write("How many employees will be registered? "); // Pergunta quantos empregados serão registrados
+            int n = int.Parse(Console.ReadLine()); // Usuario insere quantos empregados serão registrados
+
+            List<Employee> list = new List<Employee>(); // Cria e instancia a lista
+
+            for (int i = 1; i <= n; i++) // Inicia a criação dos dados
+            {
+                Console.WriteLine("Employee #" + i); // Printa o numero do usuário
+                Console.Write("Id: "); // Pergunta o ID do usuário
+                int id = int.Parse(Console.ReadLine()); // Usuário insere o número do ID
+                Console.Write("Name: "); // Pergunta o nome do funcionário
+                string name = Console.ReadLine(); // Usuário insere o nome do funcionário 
+                Console.Write("Salary: "); // Pergunta o salário do funcionário
+                double salary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); // Usuário insere o salário do funcionário
+                list.Add(new Employee(id, name, salary)); // Adiciona as informações acima na lista
+                Console.WriteLine(); // Pula linha
+            }
+
+            Console.Write("Enter the employee id that will have salary increase: "); // Pergunta qual o ID do funcionário que terá aumento de salário
+            int searchId = int.Parse(Console.ReadLine()); // Usuário digita o ID do funcionário
+
+            Employee emp = list.Find(x => x.Id == searchId); // Busca o ID na lista
+
+            if (emp != null) // Cria condição de ID caso ele exista, diferente de nulo
+            {
+                Console.Write("Enter the percentage: "); // Pergunta qual a porcentagem do salário que vai ser aumentado
+                double percentage = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); // Usuário digita a porcentagem
+                emp.IncreaseSalary(percentage); // Chama a função na outra classe
+            }
+            else // Caso o ID não exista
+            {
+                Console.WriteLine("This id doesn't exist!"); // Printa que o ID não existe
+            }
+
+            Console.WriteLine(); // Pula linha
+
+            Console.Write("Updated list of employees: ");
+
+            foreach(Employee obj in list) // Diferencia os funcionarios
+            {
+                Console.WriteLine(obj); // Printa todos os dados
+            }
+            */
+
+            #region MATRIZES
+
+            double[,]
 
             #endregion
 
