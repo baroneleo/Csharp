@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -103,7 +104,50 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             #region CONDICIONAL TERNÁRIA
 
+            /*
+            Estrutura opcional ao if-else quando se deseja decidir um VALOR com base
+            em uma condição
+            */
 
+            // SINTAXE
+
+            // (condição) ? valor se verdadeiro : valor_se_falso
+
+            // EXEMPLOS
+
+            /*
+            (2 > 4) ? 50 : 80;  ---------- > 80 (Como a expressão deu falso o cai para o 80)
+
+            (10 != 3) ? "Maria" : "Alex"------------ > "Maria"; (Como a expressão deu verdadeiro o cai para o "Maria")
+            */
+
+            //  EXEMPLO IF ELSE
+
+            /*
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double desconto;
+
+            if (preco < 20.0)
+            {
+                desconto = preco * 0.1;
+            }
+            else
+            {
+                desconto = preco * 0.05;
+            }
+
+            Console.WriteLine(desconto);
+            */
+
+            // EXEMPLO CONDICIONAL TERNÁRIA
+
+            /*
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+
+            Console.WriteLine(desconto);
+            */
 
             #endregion
 
