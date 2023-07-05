@@ -151,6 +151,42 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             #endregion
 
+            #region FUNÇÕES INTERESSANTES PARA STRING
+
+            /*
+            string original = "abcde FGHIJ ABC abc DEFG    ";
+            string s1 = original.ToUpper(); // Transforma tudo pra maiúsculo
+            string s2 = original.ToLower(); // Transforma tudo em minúsculo
+            string s3 = original.Trim(); // Apaga os resultados em branco antes ou depois
+            
+            int n1 = original.IndexOf("bc"); // Descobre a primeira ocorrencia do que foi inserido como parâmetro baseado na posicão
+            int n2 = original.LastIndexOf("bc"); // Descobre a ultima ocorrencia do que foi inserido como parâmetro baseado na posicão
+
+            string s4 = original.Substring(3); // Cortar um pedaço da string a partir da posição informada como parametro
+            string s5 = original.Substring(3, 5); // Cortar um pedaço da string a partir da posição informada como parametro, mas definindo quantos cortar
+
+            string s6 = original.Replace("a", "x"); // Substituir uma parte da string por outra informando respectivamente no parametro 
+            string s7 = original.Replace("abc", "xy"); // Substituir uma parte da string por outra informando respectivamente no parametro 
+
+            bool b1 = String.IsNullOrEmpty(original); // Verifica se o conteúdo da variável é nulo ou vazio (Util para criação de formulário)
+            bool b2 = String.IsNullOrWhiteSpace(original); // Verifica se o conteúdo da variável é nulo ou espaços em branco (Util para criação de formulário)
+
+            Console.WriteLine("Original: -" + original + "-");
+            Console.WriteLine("ToUpper: -" + s1 + "-");
+            Console.WriteLine("ToLower: -" + s2 + "-");
+            Console.WriteLine("Trim: -" + s3 + "-");
+            Console.WriteLine("IndexOf('bc'): -" + n1 + "-");
+            Console.WriteLine("LastIndexOf('bc'): -" + n2 + "-");
+            Console.WriteLine("Substring(3): -" + s4 + "-");
+            Console.WriteLine("Substring(3, 5): -" + s5 + "-");
+            Console.WriteLine("Replace('a', 'x'): -" + s6 + "-");
+            Console.WriteLine("Replace('abc', 'xy'): -" + s7 + "-");
+            Console.WriteLine("IsNullOrEmpty: -" + b1 + "-");
+            Console.WriteLine("IsNullOrWhiteSpace: -" + b2 + "-");
+            */
+
+            #endregion
+
         }
     }
 }
