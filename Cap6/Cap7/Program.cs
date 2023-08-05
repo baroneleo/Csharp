@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+using System.Xml.Schema;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -189,11 +191,12 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             #region DATETIME
 
+            /*
             // CONSTRUTORES MAIS UTILIZADOS
 
             DateTime d2 = new DateTime(2018, 11, 25); // Instancia dia, mes e ano passados como parametro
             Console.WriteLine(d2);
-
+            
             DateTime d3 = new DateTime(2018, 11, 25, 20, 45, 03); // Instancia horas, minutos, segundos, dia, mes e ano passados como parametro
             Console.WriteLine(d3);
 
@@ -227,6 +230,146 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine(d10);
             DateTime d11 = DateTime.ParseExact("15/08/2000 13:05:58", "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
             Console.WriteLine(d11);
+            */
+
+            #endregion
+
+            #region TIMESPAN
+
+            /*
+            Um objeto TimeSpan internamente armazena uma duração na forma
+            de ticks (100 nanosegundos)
+            */
+
+            /*
+            TimeSpan t1 = new TimeSpan(0, 1, 30); // Passando horas, minutos e segundos
+            Console.WriteLine(t1); // Imprime no modo 1:30:00
+            Console.WriteLine(t1.Ticks); // Imprime em Ticks (nanosegundos)
+            
+            TimeSpan t2 = new TimeSpan(); // Sem parametro passa valor (00:00:00
+            Console.WriteLine(t2); // Imprime 00:00:00
+
+            TimeSpan t3 = new TimeSpan(900000000); // Passa o valor em nanosegundos
+            Console.WriteLine(t3); // Imprime no formato padrão 1:30:00
+
+            TimeSpan t4 = new TimeSpan(1, 2, 30, 30); // Passando dia, hora, minuto e segundo
+            Console.WriteLine(t4); // O dia pra hora é impresso de maneira diferente 1.2:30:30
+
+            TimeSpan t5 = new TimeSpan(1, 2, 30, 30, 321); // Passando dia, hora, minuto, segundos e milisegundos
+            Console.WriteLine(t5); //  Os milisegundos também é impresso de maneira diferente 1.2:30:30
+
+            // TimeSpan com propriedades diferentes
+
+            TimeSpan t6 = TimeSpan.FromDays(1.5);
+            Console.WriteLine(t6);
+
+            TimeSpan t7 = TimeSpan.FromHours(1.5);
+            Console.WriteLine(t7);
+
+            TimeSpan t8 = TimeSpan.FromMinutes(1.5);
+            Console.WriteLine(t8);
+
+            TimeSpan t9 = TimeSpan.FromSeconds(1.5);
+            Console.WriteLine(t9);
+
+            TimeSpan t10 = TimeSpan.FromMilliseconds(1.5);
+            Console.WriteLine(t10);
+
+            TimeSpan t11 = TimeSpan.FromTicks(900000000);
+            Console.WriteLine(t11);
+            */
+
+            #endregion
+
+            #region PROPRIEDADES COM DATETIME
+
+            /*
+            DateTime d = new DateTime(2023, 8, 05);
+
+            DateTime d2 = new DateTime(2023, 8, 12);
+
+            TimeSpan t = d2.Subtract(d);
+            */
+
+            /*
+            Console.WriteLine(d);
+            Console.WriteLine("1) Date: " + d.Date);
+            Console.WriteLine("2) Day: " + d.Day);
+            Console.WriteLine("3) DayOfWeek: " + d.DayOfWeek);
+            Console.WriteLine("4) DayOfYear: " + d.DayOfYear);
+            Console.WriteLine("5) Hour: " + d.Hour);
+            Console.WriteLine("6) Kind: " + d.Kind);
+            Console.WriteLine("7) Milisecond: " + d.Millisecond);
+            Console.WriteLine("8) Minute: " + d.Minute);
+            Console.WriteLine("9) Month: " + d.Month);
+            Console.WriteLine("10) Second: " + d.Second);
+            Console.WriteLine("11) Ticks: " + d.Ticks);
+            Console.WriteLine("12) TimeOfDay: " + d.TimeOfDay);
+            Console.WriteLine("13) Year: " + d.Year);
+            Console.WriteLine(d.ToLongDateString());
+            */
+
+            /*
+            string s1 = d.ToLongDateString();
+            string s2 = d.ToLongTimeString();
+            string s3 = d.ToShortDateString();
+            string s4 = d.ToShortTimeString();
+            string s5 = d.ToString();
+            string s6 = d.ToString("yyy-MM-dd HH:mm:ss");
+            string s7 = d.ToString("yyy-MM-dd HH:mm:ss.fff");
+
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            Console.WriteLine(s3);
+            Console.WriteLine(s4);
+            Console.WriteLine(s5);
+            Console.WriteLine(s6);
+            Console.WriteLine(s7);
+            */
+
+            //  OPERAÇÕES COM DATETIME
+
+            //DateTime d2 = d.Add(TimeSpan);
+
+            /*
+            DateTime d3 = d.AddDays(34);
+            Console.WriteLine(d3);
+
+            DateTime d4 = d.AddHours(7);
+            Console.WriteLine(d4);
+
+            DateTime d5 = d.AddMilliseconds(123546);
+            Console.WriteLine(d5);
+
+            DateTime d6 = d.AddMinutes(37);
+            Console.WriteLine(d6);
+
+            DateTime d7 = d.AddMonths(16);
+            Console.WriteLine(d7);
+
+            DateTime d8 = d.AddSeconds(4568);
+            Console.WriteLine(d8);
+
+            DateTime d9 = d.AddTicks(15044354198465);
+            Console.WriteLine(d9);
+
+            DateTime d10 = d.AddYears(54);
+            Console.WriteLine(d10);
+            */
+
+            /*
+            DateTime x = DateTime.Now;
+            Console.WriteLine(x);
+
+            DateTime y = x.AddDays(7);
+            Console.WriteLine(y);
+            */
+
+            #endregion
+
+            #region PROPRIEDADES COM TIMESPAN
+
+
 
             #endregion
 

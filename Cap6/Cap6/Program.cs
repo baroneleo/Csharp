@@ -425,7 +425,7 @@ double avg = sum / n;
 
             Console.WriteLine(); // Pula linha
 
-            Console.Write("Updated list of employees: ");
+            Console.WriteLine("Updated list of employees: ");
 
             foreach(Employee obj in list) // Diferencia os funcionarios
             {
