@@ -2,6 +2,7 @@
 
 namespace Cap9.Entities
 {
+    /*
     class Worker
     {
         public string Name { get; set; }
@@ -50,4 +51,5 @@ namespace Cap9.Entities
         }
 
     }
+    */
 }

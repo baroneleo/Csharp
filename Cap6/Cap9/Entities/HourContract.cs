@@ -1,5 +1,6 @@
 ﻿namespace Cap9.Entities
 {
+    /*
     internal class HourContract
     {
         public DateTime Date { get; set; }
@@ -25,5 +26,5 @@
         }
 
     }
-
+    */
 }

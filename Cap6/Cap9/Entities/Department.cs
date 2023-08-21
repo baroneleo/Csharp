@@ -1,5 +1,6 @@
 ﻿namespace Cap9.Entities
 {
+    /*
     class Department
     {
         public string Name { get; set; }
@@ -13,4 +14,5 @@
             Name = name;
         }
     }
+    */
 }

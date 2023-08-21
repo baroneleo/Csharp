@@ -44,6 +44,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             do usuário um mês e mostrar qual foi o salário do funcionário nesse mês, conforme exemplo.
             */
 
+            /*
             Console.Write("Enter department's name: ");
             string deptname = Console.ReadLine();
             
@@ -88,6 +89,13 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine("Name: " + worker.Name);
             Console.WriteLine("Department: " + worker.Department.Name);
             Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture));
+            */
+
+            #endregion
+
+            #region Exercício Resolvido 2
+
+
 
             #endregion
 
