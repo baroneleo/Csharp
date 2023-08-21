@@ -87,7 +87,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             Console.WriteLine("Name: " + worker.Name);
             Console.WriteLine("Department: " + worker.Department.Name);
-            Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month));
+            Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture));
 
             #endregion
 
