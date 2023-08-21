@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.AssemblyInfo.cs
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\bin\Debug\net6.0\Cap9.exe
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\bin\Debug\net6.0\Cap9.deps.json
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\bin\Debug\net6.0\Cap9.runtimeconfig.json
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\bin\Debug\net6.0\Cap9.dll
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\bin\Debug\net6.0\Cap9.pdb
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.dll
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\refint\Cap9.dll
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.pdb
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\Cap9.genruntimeconfig.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap9\obj\Debug\net6.0\ref\Cap9.dll
