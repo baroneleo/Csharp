@@ -1,13 +1,7 @@
-﻿using System;
-using Cap10.Entities;
-using Cap10.Exercise;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Drawing;
-using System.Net;
-using System.Runtime.ConstrainedExecution;
-using System.Runtime.Intrinsics.Arm;
-using System.Runtime.Intrinsics.X86;
-using Cap10.Exercise2;
+using Cap10.Exercise3;
+
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -154,6 +148,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             #region Exercício de Fixação
 
+            /*
             List<Product> list = new List<Product>();
 
             Console.Write("Enter the number of products: ");
@@ -203,6 +198,99 @@ namespace MyApp // Note: actual namespace depends on the project name.
             {
                 Console.WriteLine(prod.Pricetag());
             }
+            */
+
+            #endregion
+
+            #region Classes Abstratas
+
+            /*
+            List<Account> list = new List<Account>();
+
+            list.Add(new SavingAccount(1001, "Alex", 500.00, 0.01));
+            list.Add(new BusinessAccount(1002, "Maria", 500.00, 400.00));
+            list.Add(new SavingAccount(1003, "Bob", 500.00, 0.01));
+            list.Add(new BusinessAccount(1004, "Anna", 500.00, 500.00));
+
+            double sum = 0.0;
+
+            foreach (Account account in list)
+            {
+                sum += account.Balance;
+            }
+
+            Console.WriteLine("Total balance: " + sum.ToString("F2", CultureInfo.InvariantCulture));
+
+            foreach(Account acc in list)
+            {
+                acc.Withdraw(10.0);
+            }
+
+            foreach(Account acc in list)
+            {
+                Console.WriteLine("Update balance for account: " 
+                    + acc.Number
+                    + ": "
+                    + acc.Balance.ToString("F2", CultureInfo.InvariantCulture));
+            }
+            */
+
+            #endregion
+
+            #region Métodos Abstratos
+
+            /*
+            
+            - São metodos que não possuem implementação.
+
+            - Métodos precisam ser abstratos quando a classe
+              é genérica demais para conter sua implementação.
+
+            - Se uma classe possuir pelo menos um método
+              abstrato, então esta classe também é abstrata.
+
+            */
+
+            #endregion
+
+            #region Exercício Métodos e Classes Abstratas
+
+            /*
+            List<Shape> list = new List<Shape>();
+
+            Console.Write("Enter the number of shapes: ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine($"Shape #{i} data:");
+                Console.Write("Rectangle or Circle (r/c)? ");
+                char ch = char.Parse(Console.ReadLine());
+                Console.Write("Color (Black/Blue/Red): ");
+                Color color = Enum.Parse<Color>(Console.ReadLine());
+                if (ch == 'r')
+                {
+                    Console.Write("Width: ");
+                    double width = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.Write("Height: ");
+                    double height = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    list.Add(new Rectangle(width, height, color));
+                }
+                else
+                {
+                    Console.Write("Radius: ");
+                    double radius = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    list.Add(new Circle(radius, color));
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("SHAPE AREAS:");
+            foreach (Shape shape in list)
+            {
+                Console.WriteLine(shape.Area().ToString("F2", CultureInfo.InvariantCulture));
+            }
+            */
 
             #endregion
 

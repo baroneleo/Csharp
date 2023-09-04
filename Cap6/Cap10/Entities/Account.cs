@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities
 {
-    class Account
+    abstract class Account
     {
         public int Number { get; protected set; }
         public string Holder { get; protected set; }
