@@ -2,7 +2,6 @@
 using Cap10.Entities;
 using Cap10.Exercise;
 using System.Globalization;
-using Microsoft.Win32;
 using System.Drawing;
 using System.Net;
 using System.Runtime.ConstrainedExecution;
