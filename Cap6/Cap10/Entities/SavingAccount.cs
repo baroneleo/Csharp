@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities
 {
-    internal class SavingAccount : Account
+        class SavingAccount : Account
     {
         public double InterestRate { get; set; }
 
@@ -23,6 +23,12 @@ namespace Cap10.Entities
         public void UpdateBalance()
         {
             Balance += InterestRate;
+        }
+
+        public sealed override void Withdraw(double amount)
+        {
+            base.Withdraw(amount);
+            Balance -= 2.0;
         }
     }
 }
