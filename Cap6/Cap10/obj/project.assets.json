@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Cap10/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Cap10.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Cap10.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Cap10/1.0.0": {
-      "type": "project",
-      "path": "../Cap10/Cap10.csproj",
-      "msbuildProject": "../Cap10/Cap10.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Cap10 >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\PC\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap9\\Cap9.csproj",
-      "projectName": "Cap9",
-      "projectPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap9\\Cap9.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap10\\Cap10.csproj",
+      "projectName": "Cap10",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap10\\Cap10.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap9\\obj\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap10\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,11 +39,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap10\\Cap10.csproj": {
-              "projectPath": "C:\\Users\\PC\\source\\repos\\Csharp\\Cap6\\Cap10\\Cap10.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

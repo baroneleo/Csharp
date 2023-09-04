@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cap5", "Cap5\Cap5.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cap7", "Cap7\Cap7.csproj", "{5A8B5902-6D26-487F-ADC8-F43215DA537D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cap9", "Cap9\Cap9.csproj", "{8CE5F37F-2DD1-4E1D-9372-EF8CD7F0BD9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cap9", "Cap9\Cap9.csproj", "{8CE5F37F-2DD1-4E1D-9372-EF8CD7F0BD9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cap10", "Cap10\Cap10.csproj", "{7D4826AE-B876-4B3E-88E2-9376D243CBFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8CE5F37F-2DD1-4E1D-9372-EF8CD7F0BD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CE5F37F-2DD1-4E1D-9372-EF8CD7F0BD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CE5F37F-2DD1-4E1D-9372-EF8CD7F0BD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4826AE-B876-4B3E-88E2-9376D243CBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4826AE-B876-4B3E-88E2-9376D243CBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4826AE-B876-4B3E-88E2-9376D243CBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4826AE-B876-4B3E-88E2-9376D243CBFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

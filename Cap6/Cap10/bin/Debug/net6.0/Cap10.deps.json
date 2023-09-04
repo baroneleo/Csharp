@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Cap9/1.0.0": {
-        "dependencies": {
-          "Cap10": "1.0.0"
-        },
-        "runtime": {
-          "Cap9.dll": {}
-        }
-      },
       "Cap10/1.0.0": {
         "runtime": {
           "Cap10.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Cap9/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Cap10/1.0.0": {
       "type": "project",
       "serviceable": false,

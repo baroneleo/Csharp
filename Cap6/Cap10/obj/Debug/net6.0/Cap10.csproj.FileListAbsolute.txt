@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\bin\Debug\net6.0\Cap10.exe
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\bin\Debug\net6.0\Cap10.deps.json
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\bin\Debug\net6.0\Cap10.runtimeconfig.json
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\bin\Debug\net6.0\Cap10.dll
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\bin\Debug\net6.0\Cap10.pdb
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.AssemblyInfo.cs
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.dll
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\refint\Cap10.dll
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.pdb
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\Cap10.genruntimeconfig.cache
+C:\Users\PC\source\repos\Csharp\Cap6\Cap10\obj\Debug\net6.0\ref\Cap10.dll
