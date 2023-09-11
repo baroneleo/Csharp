@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Exercise2
 {
+    /*
     internal class UsedProduct : Product
     {
         public DateTime ManufactureDate { get; set; }
@@ -28,4 +29,5 @@ namespace Cap10.Exercise2
                 + ")";
         }
     }
+    */
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Exercise3
 {
+    
     class Circle : Shape
     {
         public double Radius { get; set; }
@@ -21,4 +22,5 @@ namespace Cap10.Exercise3
             return Math.PI * Radius * Radius;
         }
     }
+    
 }

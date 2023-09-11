@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities
 {
+    
     class Employee
     {
         public string Name { get; set; }
@@ -29,4 +30,5 @@ namespace Cap10.Entities
             return ValuePerHour * Hours;
         }
     }
+    
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Exercise4
 {
+    /*
     class Individual : TaxPayer
     {
         public double HealthExpenditures { get; set; }
@@ -28,4 +29,5 @@ namespace Cap10.Exercise4
             }
         }
     }
+    */
 }

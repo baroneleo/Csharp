@@ -7,6 +7,7 @@ using System.Globalization;
 
 namespace Cap10.Exercise2
 {
+    /*
     internal class ImportedProduct : Product
     {
         public double CustomsFee { get; set; }
@@ -33,4 +34,5 @@ namespace Cap10.Exercise2
                 + ")";
         }
     }
+    */
 }

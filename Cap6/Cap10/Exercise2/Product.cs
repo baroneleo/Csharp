@@ -7,6 +7,7 @@ using System.Globalization;
 
 namespace Cap10.Exercise2
 {
+    /*
     class Product
     {
         public string Name { get; set; }
@@ -26,6 +27,6 @@ namespace Cap10.Exercise2
                 + " $ "
                 + Price.ToString("F2", CultureInfo.InvariantCulture);
         }
-
     }
+    */
 }

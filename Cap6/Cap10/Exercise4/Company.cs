@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Exercise4
 {
+    /*
     class Company : TaxPayer
     {
         public int NumberOfEmployees { get; set; }
@@ -29,4 +30,5 @@ namespace Cap10.Exercise4
             }
         }
     }
+    */
 }

@@ -3,6 +3,8 @@ using System.Drawing;
 using Cap10.Exercise3;
 using Cap10.Exercise4;
 using System.Diagnostics.CodeAnalysis;
+using Cap10.Entities;
+using Cap10.Entities.Exceptions;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -319,6 +321,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             // RESOLUÇÃO
 
+            /*
             List<TaxPayer> list = new List<TaxPayer>();
 
             Console.Write("Enter the number of tax payers: ");
@@ -361,6 +364,96 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             Console.WriteLine();
             Console.WriteLine("TOTAL TAXES: $ " + sum.ToString("F2", CultureInfo.InvariantCulture));
+            */
+
+            #endregion
+
+            #region Tratamento de exceções (Try-Catch)
+
+            /*
+            try
+            {
+                int n1 = int.Parse(Console.ReadLine());
+                int n2 = int.Parse(Console.ReadLine());
+
+                int result = n1 / n2;
+                Console.WriteLine(result);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Division by zero is not allowed");
+            }
+            catch(FormatException ex) 
+            {
+                Console.WriteLine("Format error " + ex.Message);
+            }
+            */
+
+            // Utilizando Finally
+
+            /*
+            FileStream fs = null;
+
+            try
+            {
+                fs = new FileStream(@"C:\temp\data.txt", FileMode.Open);
+                StreamReader sr = new StreamReader(fs);
+                string line = sr.ReadLine();
+                Console.WriteLine(line);
+            }
+            catch (FileNotFoundException ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (fs != null)
+                {
+                    fs.Close();
+                }
+            }
+            */
+
+            #endregion
+
+            #region Exercício de fixação
+
+            /*
+            try
+            {
+                Console.Write("Room number: ");
+                int number = int.Parse(Console.ReadLine());
+                Console.Write("Check-in date (dd/MM/yyyy): ");
+                DateTime checkIn = DateTime.Parse(Console.ReadLine());
+                Console.Write("Check-out date (dd/MM/yyyy): ");
+                DateTime checkOut = DateTime.Parse(Console.ReadLine());
+
+                Reservation reservation = new Reservation(number, checkIn, checkOut);
+                Console.WriteLine("Reservation: " + reservation);
+
+                Console.WriteLine();
+                Console.WriteLine("Enter data to update the reservation:");
+                Console.Write("Check-in date (dd/MM/yyyy): ");
+                checkIn = DateTime.Parse(Console.ReadLine());
+                Console.Write("Check-out date (dd/MM/yyyy): ");
+                checkOut = DateTime.Parse(Console.ReadLine());
+
+                reservation.UpdateDates(checkIn, checkOut);
+                Console.WriteLine("Reservation: " + reservation);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Error in format: " + e.Message);
+            }
+            catch (DomainException e)
+            {
+                Console.WriteLine("Error in reservation: " + e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Unexpected error: " + e.Message);
+            }
+            */
 
             #endregion
 

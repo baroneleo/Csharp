@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Exercise4
 {
+    /*
     abstract class TaxPayer
     {
         public string Name { get; set; }
@@ -23,4 +24,5 @@ namespace Cap10.Exercise4
 
         public abstract double Tax();
     }
+    */
 }

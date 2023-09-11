@@ -8,7 +8,7 @@ using System.Globalization;
 
 namespace Cap9.Entities
 {
-    /*   
+    
     internal class Order
     {
         public DateTime Moment { get; set; }
@@ -67,5 +67,5 @@ namespace Cap9.Entities
         }
 
     }
-    */
+    
 }
