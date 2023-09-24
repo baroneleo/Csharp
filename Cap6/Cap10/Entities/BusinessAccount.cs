@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities
 {
+    /*
     class BusinessAccount : Account
     {
         public double LoanLimit { get; set; }
@@ -25,4 +26,5 @@ namespace Cap10.Entities
             }
         }
     }
+    */
 }

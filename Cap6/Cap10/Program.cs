@@ -5,6 +5,7 @@ using Cap10.Exercise4;
 using System.Diagnostics.CodeAnalysis;
 using Cap10.Entities;
 using Cap10.Entities.Exceptions;
+using System.ComponentModel.Design;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -418,45 +419,45 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             #region Exercício de fixação
 
-            /*
             try
             {
-                Console.Write("Room number: ");
-                int number = int.Parse(Console.ReadLine());
-                Console.Write("Check-in date (dd/MM/yyyy): ");
-                DateTime checkIn = DateTime.Parse(Console.ReadLine());
-                Console.Write("Check-out date (dd/MM/yyyy): ");
-                DateTime checkOut = DateTime.Parse(Console.ReadLine());
 
-                Reservation reservation = new Reservation(number, checkIn, checkOut);
-                Console.WriteLine("Reservation: " + reservation);
+            Console.Write("Room number: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.Write("Check-in date (dd/MM/yyyy): ");
+            DateTime checkIn = DateTime.Parse(Console.ReadLine());
+            Console.Write("Check-out date (dd/MM/yyyy): ");
+            DateTime checkOut = DateTime.Parse(Console.ReadLine());
 
-                Console.WriteLine();
-                Console.WriteLine("Enter data to update the reservation:");
-                Console.Write("Check-in date (dd/MM/yyyy): ");
-                checkIn = DateTime.Parse(Console.ReadLine());
-                Console.Write("Check-out date (dd/MM/yyyy): ");
-                checkOut = DateTime.Parse(Console.ReadLine());
+            Reservation reservation = new Reservation(number, checkIn, checkOut);
+            Console.WriteLine("Reservation: " + reservation);
 
-                reservation.UpdateDates(checkIn, checkOut);
-                Console.WriteLine("Reservation: " + reservation);
+            Console.WriteLine();
+            Console.WriteLine("Enter data to update thereservation: ");
+            Console.Write("Check-in date (dd/MM/yyyy):");
+            checkIn = DateTime.Parse(Console.ReadLine());
+            Console.Write("Check-out date (dd/MM/yyyy):");
+            checkOut = DateTime.Parse(Console.ReadLine());
+
+            reservation.UpdateDates(checkIn, checkOut);
+            Console.WriteLine("Reservation: " + reservation);
             }
-            catch (FormatException e)
+
+            catch (DomainException ex)
             {
-                Console.WriteLine("Error in format: " + e.Message);
+                Console.WriteLine("Error in reservation: " + ex.Message);
             }
-            catch (DomainException e)
+            catch (FormatException ex)
             {
-                Console.WriteLine("Error in reservation: " + e.Message);
+                Console.WriteLine("Format error: " + ex.Message);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine("Unexpected error: " + e.Message);
+                Console.WriteLine("Unexpected error: " + ex.Message);
             }
-            */
-
-            #endregion
-
         }
+
+        #endregion
+
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities
 {
+    /*
         class SavingAccount : Account
     {
         public double InterestRate { get; set; }
@@ -31,4 +32,5 @@ namespace Cap10.Entities
             Balance -= 2.0;
         }
     }
+    */
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities
 {
+    /*
     abstract class Account
     {
         public int Number { get; protected set; }
@@ -30,7 +31,6 @@ namespace Cap10.Entities
         {
             Balance += amount;
         }
-
-
     }
+    */
 }

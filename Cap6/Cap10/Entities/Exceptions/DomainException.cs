@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Cap10.Entities.Exceptions
 {
-    /*
-    internal class DomainException : ApplicationException
+    
+    class DomainException : ApplicationException
     {
         public DomainException(string message) : base(message) { }
     }
-    */
+    
 }

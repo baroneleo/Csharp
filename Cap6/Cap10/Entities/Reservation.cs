@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,54 +8,49 @@ using Cap10.Entities.Exceptions;
 
 namespace Cap10.Entities
 {
-    class Reservation
+    internal class Reservation
     {
-        /*
         public int RoomNumber { get; set; }
         public DateTime CheckIn { get; set; }
         public DateTime CheckOut { get; set; }
 
-        public Reservation()
-        {
-        }
+        public Reservation() { }
 
         public Reservation(int roomNumber, DateTime checkIn, DateTime checkOut)
         {
-
             if (checkOut <= checkIn)
             {
-                throw new DomainException("Check-out date must be after check-in date");
+                throw new DomainException("Checkout date must be after check-in date");
             }
 
             RoomNumber = roomNumber;
             CheckIn = checkIn;
             CheckOut = checkOut;
         }
-
-        public double Duration()
+        public int Duration()
         {
             TimeSpan duration = CheckOut.Subtract(CheckIn);
             return (int)duration.TotalDays;
         }
-
-        public void UpdateDates(DateTime checkIn, DateTime checkOut)
+        public string UpdateDates(DateTime checkIn, DateTime checkOut)
         {
-
             DateTime now = DateTime.Now;
-            if (checkIn < now || checkOut < now)
+
+            if (checkIn > now || checkOut > now)
             {
-                throw new DomainException("Reservation dates for update must be future dates");
+                throw new DomainException ("Reservation dates for update must be future dates");
             }
-            else if (checkOut <= checkIn)
+            if(checkOut <= checkIn)
             {
-                throw new DomainException("Check-out date must be after check-in date");
-            }
+                throw new DomainException ("Checkout date must be after check-in date");
+            }            
 
             CheckIn = checkIn;
             CheckOut = checkOut;
-        }
 
-        public override string ToString()
+            return null;
+        }
+        public override string ToString() 
         {
             return "Room "
                 + RoomNumber
@@ -66,6 +62,6 @@ namespace Cap10.Entities
                 + Duration()
                 + " nights";
         }
-        */
+
     }
 }
