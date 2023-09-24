@@ -8,6 +8,7 @@ using Cap10.Entities.Exceptions;
 
 namespace Cap10.Entities
 {
+    /*
     internal class Reservation
     {
         public int RoomNumber { get; set; }
@@ -62,6 +63,6 @@ namespace Cap10.Entities
                 + Duration()
                 + " nights";
         }
-
     }
+    */
 }

@@ -419,6 +419,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             #region Exercício de fixação
 
+            /*
             try
             {
 
@@ -455,9 +456,64 @@ namespace MyApp // Note: actual namespace depends on the project name.
             {
                 Console.WriteLine("Unexpected error: " + ex.Message);
             }
-        }
+            */
 
-        #endregion
+            #endregion
+
+            #region Exercício proposto
+
+            // ENUNCIADO
+
+            /*
+            Fazer um programa para ler os dados de uma conta bancária e depois realizar um 
+            saque nesta conta bancária, mostrando o novo saldo. Um saque não pode ocorrer 
+            ou se não houver saldo na conta, ou se o valor do saque for superior ao limite de 
+            saque da conta.
+            */
+
+            // RESOLUÇÃO
+
+            /*
+            Console.WriteLine("Enter account data");
+
+            Console.Write("Numer: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.Write("Holder: ");
+            string holder = Console.ReadLine();
+            Console.Write("Initial balance: ");
+            double balance = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.Write("Withdraw limit");
+            double withdrawLimit = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Account account = new Account(number, holder, balance, withdrawLimit);
+
+            Console.WriteLine();
+
+            Console.Write("Enter amount for withdraw: ");
+            double amount = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            try
+            {
+                account.Withdraw(amount);
+                Console.WriteLine("New balance" + account.Balance.ToString("F2", CultureInfo.InvariantCulture));
+            }
+            catch (DomainException ex) 
+            {
+                Console.WriteLine("Withdraw error: " + ex.Message);
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Format error: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Unexpected error: " + ex.Message);
+            }
+            */
+
+            #endregion
+
+        }
 
     }
 }
