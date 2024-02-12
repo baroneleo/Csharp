@@ -1,4 +1,5 @@
 ﻿using Cap14.Entites;
+using Cap14.Enums;
 using Cap14.Services;
 using System;
 using System.Globalization;
@@ -60,6 +61,14 @@ namespace MyApp // Note: actual namespace depends on the project name.
             {
                 Console.WriteLine(installment);
             }
+            */
+
+            /*
+            IShape s1 = new Circle() { Radius = 10.0, Color = Color.White };
+            IShape s2 = new Rectangle() { Height = 10.0, Width = 10.0, Color = Color.Black };
+
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
             */
         }
     }
