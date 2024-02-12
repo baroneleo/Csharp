@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace Cap14.Entities
+namespace Cap14.Entites
 {
-    internal class Invoice
+    class Invoice
     {
         public double BasicPayment { get; set; }
         public double Tax { get; set; }
 
-        public Invoice(double basicPayment, double tax)
+        public Invoice(double basicPayment, double tax) 
         {
             BasicPayment = basicPayment;
             Tax = tax;
@@ -25,7 +25,7 @@ namespace Cap14.Entities
 
         public override string ToString()
         {
-            return "Basic payment: "
+            return "Basic Payment: "
                 + BasicPayment.ToString("F2", CultureInfo.InvariantCulture)
                 + "\nTax: "
                 + Tax.ToString("F2", CultureInfo.InvariantCulture)

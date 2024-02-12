@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cap14.Entities
+namespace Cap14.Entites
 {
-    internal class Vehicle
+    class Vehicle
     {
         public string Model { get; set; }
 

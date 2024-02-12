@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Cap14.Services
 {
-    internal class BrazilTaxService : ITaxService
+    class BrazilTaxService : ITaxService
     {
-        public double Tax(double amount) 
+        public double Tax(double amount)
         {
-            if (amount <= 100.0) 
+            if (amount <= 100.0)
             {
                 return amount * 0.2;
             }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Cap14.Entities;
+using Cap14.Entites;
 
 namespace Cap14.Services
 {
-    internal class RentalService
+    class RentalService
     {
         public double PricePerHour { get; private set; }
         public double PricePerDay { get; private set; }
@@ -27,9 +27,9 @@ namespace Cap14.Services
 
             double basicPayment = 0.0;
 
-            if (duration.TotalHours <= 12.0)
+            if (duration.TotalHours <= 12.0) 
             {
-                basicPayment = PricePerHour * Math.Ceiling(duration.TotalHours);
+                basicPayment = PricePerHour * Math.Ceiling(duration.TotalHours);  
             }
             else
             {

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cap14.Entities
+namespace Cap14.Entites
 {
-    internal class CarRental
+    class CarRental
     {
-        public DateTime Start { get; set; }
-        public DateTime Finish { get; set; }
-        public Vehicle Vehicle { get; set; }
+        public DateTime Start {  get; set; }
+        public DateTime Finish { get; set; }        
+        public Vehicle Vehicle { get; set; }  
         public Invoice Invoice { get; set; }
 
         public CarRental(DateTime start, DateTime finish, Vehicle vehicle)
@@ -18,7 +18,6 @@ namespace Cap14.Entities
             Start = start;
             Finish = finish;
             Vehicle = vehicle;
-            Invoice = null;
         }
     }
 }
