@@ -1,8 +1,10 @@
-﻿using Cap14.Entites;
+﻿using Cap14.Devices;
+using Cap14.Entites;
 using Cap14.Enums;
 using Cap14.Services;
 using System;
 using System.Globalization;
+using System.Transactions;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -69,6 +71,21 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             Console.WriteLine(s1);
             Console.WriteLine(s2);
+            */
+
+            /*
+            Printer p = new Printer() { SerialNumber = 1080 };
+            p.ProcessDoc("My letter");
+            p.Print("My letter");
+
+            Scanner s = new Scanner() { SerialNumber = 2003 };
+            s.ProcessDoc("My Email");
+            Console.WriteLine(s.Scan());
+
+            ComboDevice c = new ComboDevice() { SerialNumber = 3931 };
+            c.ProcessDoc("My dissertation");
+            c.Print("My dissertation");
+            Console.WriteLine(c.Scan());
             */
         }
     }
