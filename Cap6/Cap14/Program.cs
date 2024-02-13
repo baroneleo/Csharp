@@ -5,6 +5,8 @@ using Cap14.Services;
 using System;
 using System.Globalization;
 using System.Transactions;
+using System.IO;
+using System.Collections.Generic;
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -86,6 +88,32 @@ namespace MyApp // Note: actual namespace depends on the project name.
             c.ProcessDoc("My dissertation");
             c.Print("My dissertation");
             Console.WriteLine(c.Scan());
+            */
+
+            /*
+            string path = @"C:\Users\PC\Documents\in.txt";
+
+            try
+            {
+                using (StreamReader sr = File.OpenText(path))
+                {
+                    List<Employee> list = new List<Employee>();
+                    while (!sr.EndOfStream)
+                    {
+                        list.Add(new Employee(sr.ReadLine()));
+                    }
+                    list.Sort();
+                    foreach (Employee emp in list) 
+                    {
+                        Console.WriteLine(emp);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error ocurred");
+                Console.WriteLine(ex.Message);
+            }
             */
         }
     }
